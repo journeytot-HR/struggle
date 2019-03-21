@@ -1,0 +1,33 @@
+2019-03-19 18:25:37,766 [INFO] [main] com.stylefeng.guns.rest.GunsRestApplication [StartupInfoLogger.java : 48] Starting GunsRestApplication on DESKTOP-9I7EUP9 with PID 6904 (D:\myproj\struggle\struggle-rest\target\classes started by nec in D:\myproj\struggle\struggle-rest)
+2019-03-19 18:25:37,768 [DEBUG] [main] com.stylefeng.guns.rest.GunsRestApplication [StartupInfoLogger.java : 51] Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2019-03-19 18:25:37,768 [INFO] [main] com.stylefeng.guns.rest.GunsRestApplication [SpringApplication.java : 593] No active profile set, falling back to default profiles: default
+2019-03-19 18:25:37,805 [INFO] [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java : 583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@22fcf7ab: startup date [Tue Mar 19 18:25:37 CST 2019]; root of context hierarchy
+2019-03-19 18:25:38,476 [WARN] [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java : 551] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.stylefeng.guns.rest.GunsRestApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'mybatisPlusConfig' for bean class [com.stylefeng.guns.config.MybatisPlusConfig] conflicts with existing, non-compatible bean definition of same name and class [com.stylefeng.guns.rest.config.MybatisPlusConfig]
+2019-03-19 18:25:38,480 [INFO] [main] o.s.b.a.logging.AutoConfigurationReportLoggingInitializer [AutoConfigurationReportLoggingInitializer.java : 101] 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-03-19 18:25:38,486 [ERROR] [main] org.springframework.boot.SpringApplication [SpringApplication.java : 771] Application startup failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.stylefeng.guns.rest.GunsRestApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'mybatisPlusConfig' for bean class [com.stylefeng.guns.config.MybatisPlusConfig] conflicts with existing, non-compatible bean definition of same name and class [com.stylefeng.guns.rest.config.MybatisPlusConfig]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:181)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:308)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:228)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:272)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:92)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:687)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:525)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.stylefeng.guns.rest.GunsRestApplication.main(GunsRestApplication.java:10)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'mybatisPlusConfig' for bean class [com.stylefeng.guns.config.MybatisPlusConfig] conflicts with existing, non-compatible bean definition of same name and class [com.stylefeng.guns.rest.config.MybatisPlusConfig]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:345)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:283)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:135)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:287)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:245)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:198)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167)
+	... 13 common frames omitted
